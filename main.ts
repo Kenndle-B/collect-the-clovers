@@ -152,9 +152,6 @@ let hero = sprites.create(img`
     `, SpriteKind.Player)
 hero.sayText("Touch The clovers Only", 2000, false)
 controller.moveSprite(hero)
-hero.setStayInScreen(true)
-info.setScore(0)
-info.startCountdown(30)
 game.onUpdateInterval(500, function () {
     clover = sprites.createProjectileFromSide(img`
         . . . b b b . . . b b . . . . . 
